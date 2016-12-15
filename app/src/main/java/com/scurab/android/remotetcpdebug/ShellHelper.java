@@ -79,11 +79,11 @@ public class ShellHelper {
                         found.add(matcher.group(1));
                     }
                 }
-                found.remove("127.0.0.1");
-                found.remove("0.0.0.0");
                 result.addAll(found);
             }
         }
+        result.remove("127.0.0.1");
+        result.remove("0.0.0.0");
         return result;
     }
 }

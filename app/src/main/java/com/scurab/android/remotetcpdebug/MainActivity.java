@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
                 onEnableTCPDebug();
             }
         });
-        mIps.setText(Arrays.toString(ShellHelper.getIpAddresses().toArray()));
+        mIps.setText("IP Address: " + Arrays.toString(ShellHelper.getIpAddresses().toArray()));
     }
 
     protected void onEnableTCPDebug() {
