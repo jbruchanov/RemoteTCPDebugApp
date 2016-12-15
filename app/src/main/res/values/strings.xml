@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RemoteTCPDebug</string>
+    <string name="enable_tcp_debug">Enable TCP Debug</string>
+</resources>
