@@ -19,6 +19,12 @@ import java.util.regex.Pattern;
 
 public class ShellHelper {
 
+    public static final String[] ENABLE_TCP_DEBUG_CMDS = new String[] {
+            "setprop service.adb.tcp.port 5555",
+            "stop adbd",
+            "start adbd",
+    };
+
     public static String test() {
         return executeSafe("su", "mkdir /sdcard/testdir");
     }
